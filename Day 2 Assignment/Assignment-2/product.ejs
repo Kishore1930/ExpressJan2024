@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <style>
+        table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    </style>
+
+</head>
+
+<body>
+    <table align="center">
+        <form action="/product" method="POST">
+       
+        <tr>
+         <td><label for="productname" id="pdname">Product Name:</label></td>
+         <td><input type="text" name="t1"></td>
+        </tr> 
+        <tr>
+         <td><label for="price" id="unprice">Unit price:</label></td>
+         <td><input type="text" name="t2" value="0"></td>
+        </tr> 
+        <tr>
+         <td><label for="quantity" id="qty">Quantity:</label></td>
+         <td><input type="text" name="t3" value="0"></td>
+        </tr> 
+        <tr>
+            <td><input type="submit" value="Get Product"></td>
+        </tr>
+        <td> <p> The total is: <%= result %></p>
+        </body></td>
+
+    </form>
+    </table>
+    <a href="/" align="center">Go back</a>
+</body>
+
+
+</html>
