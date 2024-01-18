@@ -1,0 +1,39 @@
+
+<html>
+    <head>
+
+        <style>
+            body{
+                background: linear-gradient(to right,rgb(224, 224, 131),rgb(20, 198, 153));
+            }
+            h1{
+                text-align: center;
+                border: 2px solid yellow;
+                background-color: rgb(211, 172, 172);
+            }
+            td{
+                padding: 20px 20px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <h1>User details</h1>
+
+        <table border="1" cellspacing="0" cellpadding="5"  width="44" style="float:top;">
+
+            <% for(let item of userDetails)
+            {%>
+                <div>
+                    <td align="center"><img src="<%= item.avatar %>" alt="g" /> <br> <%=item.first_name%>&nbsp;<%=item.last_name%><br>
+                       <%=item.email%>
+                        
+                    </td>
+                <div>
+
+                <% } %> 
+         </table>  
+         
+    </body>
+</html>
