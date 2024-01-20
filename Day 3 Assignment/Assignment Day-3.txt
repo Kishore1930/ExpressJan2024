@@ -1,0 +1,53 @@
+Kishore V
+2586708
+
+
+2 
+a.How to insert a record in mongodb
+
+    -> db.collection.insert() is the method to insert a record in mongodb
+
+exmp:
+ db.users.insert({
+ _id : ObjectId("507f191e810c19729de860ea"),
+ title: "MongoDB Overview",
+ description: "MongoDB is no sql database",
+ by: "exmp point",
+ url: "http://www.tutorialspoint.com",
+ tags: ['mongodb', 'database', 'NoSQL'],
+ likes: 100
+ })
+
+____________________________________________________________________________________________________________________________________________________________
+
+b.how to display the documents in mongodb
+
+   ->Using the Find method, we can retrieve specific documents as well as the fields that we require.
+
+exmp:
+collection.find({}).toArray((err, documents) => {}
+___________________________________________________________________________________________________________________________________________________________
+
+
+c.how to update documentsin mongodb
+
+   ->The update() method updates the values in the existing document while the save() method replaces the existing document with the document passed in save() method.
+
+exmp:
+db.mycol.update({'title':'MongoDB Overview'},{$set:{'title':'New MongoDB Tutorial'}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+____________________________________________________________________________________________________________________________________________________________
+
+d.how to delete documents in mongodb
+
+   ->Three methods provided by MongoDB for deleting documents are:
+                  -> db.collection.deleteOne()
+                  -> db.collection.remove()
+                  -> db.collection.deleteMany()
+
+exmp:
+
+db.programmers.deleteOne( { name: { $in: [ "Dennis Ritchie", "Bjarne Stroustrup"] } } )
+
+____________________________________________________________________________________________________________________________________________________________
