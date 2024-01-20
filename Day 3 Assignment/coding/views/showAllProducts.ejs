@@ -1,0 +1,124 @@
+<html>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f5f5f5;
+       
+        display: inline;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: 50px 90px;
+        /* max-width: 800px; */
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th,
+    td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #4CAF50;
+        color: #fff;
+    }
+
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    a {
+        display: inline-block;
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+        text-decoration: none;
+        color: #333;
+        background-color: #fff;
+        border: 1px solid #333;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    a:hover {
+        background-color: #333;
+        color: #fff;
+    }
+    h1{
+        text-align: center;
+        color: aqua;
+        font-size: 20px;
+        font-family: sans-serif;
+        font-weight: bolder;
+    }
+</style>
+
+
+<body>
+    <h1>All Products</h1>
+    <hr />
+
+
+    <table border="2" width="400" cellspacing="0" cellpadding="5">
+
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Category</th>
+            <th></th>
+        </tr>
+
+        <% for(let item of productArray) { %>
+            <tr>
+                <td>
+                    <%=item.pid%>
+                </td>
+                <td>
+                    <%=item.pname%>
+                </td>
+                <td>
+                    <%=item.price%>
+                </td>
+                <td>
+                    <%=item.quantity%>
+                </td>
+                <td>
+                    <%=item.category%>
+                </td>
+                <td>
+                    <a href="/user/GetProductById/<%=item.pid%>">Details</a>
+                </td>
+            </tr>
+            <% } %>
+
+    </table>
+    <hr />
+    <a href="/">Back to Home</a>
+    <form action="/user/getProductBycategory" method="get">
+        <table>
+            <tr>
+                <td>Select Category</td>
+                <td><input type="text" name="t1"></td>
+                <td><button type="submit">Get</button></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
