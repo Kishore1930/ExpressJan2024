@@ -1,0 +1,23 @@
+KISHORE V
+2586708
+(ASSIGNMENT-1)REACT JS
+
+3.What are keys in React JS? How keys are involving  in array processing? 
+
+  ->It is a special string attribute you need to include when creating lists of elements in React.
+  ->Keys are used in React to identify which items in the list are changed, updated, or deleted.
+
+  ->Keys in React are used during array processing to help React efficiently update the user interface when dealing with lists. 
+
+_____________________________________________________________________________________________________________________________________________________________
+
+4.How to display images in React JS?
+
+  
+  ->Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+
+Syntax:
+   
+  <img src="./logo.svg" alt="logo" />
+
+_____________________________________________________________________________________________________________________________________________________________
