@@ -1,0 +1,14 @@
+Kishore.V
+
+Assignment-Day 2
+
+
+State
+
+   =>The Data is passed within the component only.
+   =>It is Mutable
+
+PROS
+
+   =>The Data is passed from one component to another.
+   =>It is Immutable 
