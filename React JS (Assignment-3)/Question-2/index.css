@@ -1,0 +1,77 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #2d0dc9c0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.todo-card {
+  background: linear-gradient(to right,rgb(215, 34, 215),rgb(28, 151, 185));
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.todo-list {
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.add-task {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #0ccd4c;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.todo-item span {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.delete-btn {
+  width: 20px;
+  height: 20px;
+  background: url('https://cdn-icons-png.flaticon.com/512/3687/3687412.png') no-repeat center center;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
